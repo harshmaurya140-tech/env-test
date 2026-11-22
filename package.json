@@ -1,0 +1,17 @@
+{
+  "name": "envguardian-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small web demo that runs the published EnvGuardian CLI against a safe sample project.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@ansari_mehran_24/envguardian": "1.0.0",
+    "express": "^4.21.2"
+  }
+}

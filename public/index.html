@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Try the EnvGuardian npm CLI against a safe sample project.">
+  <title>EnvGuardian — Live CLI Demo</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <nav><span class="brand-mark">EG</span><span class="brand">EnvGuardian</span><span class="pill">npm package demo</span></nav>
+    <section class="hero">
+      <p class="eyebrow">ENVIRONMENT CONFIGURATION TOOLKIT</p>
+      <h1>See EnvGuardian<br><span>in action.</span></h1>
+      <p class="intro">Run the published EnvGuardian CLI against a small, safe sample project. Choose a command and inspect its real terminal output.</p>
+      <div class="links">
+        <a href="https://www.npmjs.com/package/@ansari_mehran_24/envguardian" target="_blank" rel="noreferrer">View on npm ↗</a>
+        <a href="https://github.com/ansarimehran24/env-guard" target="_blank" rel="noreferrer">Source repository ↗</a>
+      </div>
+    </section>
+    <section class="workspace">
+      <div class="panel-head">
+        <div><p class="eyebrow">INTERACTIVE PLAYGROUND</p><h2>Run a command</h2></div>
+        <span id="status" class="status"><i></i> Checking demo</span>
+      </div>
+      <p class="hint">Commands run on the server in an isolated demo folder. No command-line input or personal files are accepted.</p>
+      <div class="commands">
+        <button data-command="scan">scan</button>
+        <button data-command="validate">validate</button>
+        <button data-command="compare">compare</button>
+        <button data-command="doctor">doctor</button>
+        <button data-command="git-check">git-check</button>
+        <button data-command="generate-example">generate-example</button>
+        <button data-command="init">init</button>
+      </div>
+      <div class="terminal">
+        <div class="terminal-bar"><div class="dots"><b></b><b></b><b></b></div><span id="terminal-title">envguardian — ready</span><button id="clear">Clear</button></div>
+        <pre id="output">Welcome to the EnvGuardian demo.
+
+Select a command above to run the published npm package
+against the included sample project.</pre>
+      </div>
+      <p class="footnote">Demo package: <code>@ansari_mehran_24/envguardian@1.0.0</code></p>
+    </section>
+    <footer>Built to demonstrate the published EnvGuardian npm package.</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
